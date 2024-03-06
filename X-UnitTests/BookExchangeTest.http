@@ -1,0 +1,64 @@
+POST http://localhost:4000/books/ HTTP/1.1
+Content-Type: application/json
+Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTUxNDY1MWNiNzUxNmNiNjI4YjQ2MiIsImlhdCI6MTcwMDA3NDczMSwiZXhwIjoxNzAwOTM4NzMxfQ.Sf-OilagBQJUsQFqa5U9fMFGLzu0wgfH4FUmVrm3IKA
+
+{ 
+"title": "The Enigma Code",
+"author": "Sarah J. Walker", 
+"description": "A gripping thriller that follows the life of a brilliant cryptographer who stumbles upon a mysterious code that could change the course of history.",
+"exchangeType": "borrow",
+"owner": "655514651cb7516cb628b462",
+"status": "available" 
+}
+{ 
+"title": "Whispers in the Woods",
+"author": "James A. Anderson", 
+"description": "An enchanting fantasy novel set in a magical forest, where a young protagonist discovers a world filled with mythical creatures and ancient secrets.",
+"exchangeType": "borrow",
+"owner": "655514651cb7516cb628b462",
+"status": "available" 
+},
+{ 
+"title": "Echoes of Eternity",
+"author": "Isabel R. Morgan", 
+"description": "A thought-provoking science fiction tale that explores the consequences of time travel, as a group of scientists tries to undo a catastrophic event.",
+"exchangeType": "borrow",
+"owner": "655514651cb7516cb628b462",
+"status": "available" 
+},
+{ 
+"title": "Midnight Serenade",
+"author": "Carlos M. Rodriguez", 
+"description": "A romantic mystery that unfolds against the backdrop of a bustling city, where two strangers find themselves entangled in a series of unexpected events under the moonlit sky.",
+"exchangeType": "borrow",
+"owner": "655514651cb7516cb628b462",
+"status": "available" 
+},
+{ 
+"title": "The Art of Forgetting",
+"author": "Emily K. Harpere", 
+"description": "A poignant drama that delves into the complexities of memory and identity, as the main character navigates through a life-altering journey of self-discovery.",
+"exchangeType": "borrow",
+"owner": "655514651cb7516cb628b462",
+"status": "available" 
+}
+
+# GET http://localhost:4000/books/65551d000c0233344cd5b355 HTTP/1.1
+# Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTUxNDY1MWNiNzUxNmNiNjI4YjQ2MiIsImlhdCI6MTcwMDA3NDczMSwiZXhwIjoxNzAwOTM4NzMxfQ.Sf-OilagBQJUsQFqa5U9fMFGLzu0wgfH4FUmVrm3IKA
+
+# PUT http://localhost:4000/books/65551dc80c0233344cd5b362 HTTP/1.1
+# Content-Type: application/json
+# Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTUxNDY1MWNiNzUxNmNiNjI4YjQ2MiIsImlhdCI6MTcwMDA3NDczMSwiZXhwIjoxNzAwOTM4NzMxfQ.Sf-OilagBQJUsQFqa5U9fMFGLzu0wgfH4FUmVrm3IKA
+
+# { 
+#  "title": "Beyond the Horizon",
+#  "author": "Elena M. Turner", 
+#  "description": "A captivating journey of self-discovery as the main character embarks on a solo expedition to explore uncharted territories and confront the mysteries beyond the horizon.",
+#  "exchangeType": "trade",
+#  "owner": "655514651cb7516cb628b462",
+#  "status": "available" 
+# }
+
+DELETE http://localhost:4000/books/65551dd70c0233344cd5b365 HTTP/1.1
+Content-Type: application/json
+Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTUxNDY1MWNiNzUxNmNiNjI4YjQ2MiIsImlhdCI6MTcwMDA3NDczMSwiZXhwIjoxNzAwOTM4NzMxfQ.Sf-OilagBQJUsQFqa5U9fMFGLzu0wgfH4FUmVrm3IKA
